@@ -71,11 +71,13 @@
 <li><a class="reference internal" href="#">1. OPCELの学習</a><ul>
 <li><a class="reference internal" href="#id1">1.1. OPCELとは</a></li>
 <li><a class="reference internal" href="#version2-0">1.2. Version2.0になりました</a></li>
-<li><a class="reference internal" href="#id2">1.3. 何が変わったのだろう？</a></li>
-<li><a class="reference internal" href="#mitaka-queens">1.4. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応</a></li>
-<li><a class="reference internal" href="#id3">1.5. 商用システムで活用度の高いコアコンポーネントの選択と集中</a></li>
-<li><a class="reference internal" href="#id4">1.6. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加</a></li>
-<li><a class="reference internal" href="#id5">1.7. 学習方針</a></li>
+<li><a class="reference internal" href="#id2">1.3. 何が変わったのだろう？</a><ul>
+<li><a class="reference internal" href="#mitaka-queens">1.3.1. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応</a></li>
+<li><a class="reference internal" href="#id3">1.3.2. 商用システムで活用度の高いコアコンポーネントの選択と集中</a></li>
+<li><a class="reference internal" href="#id4">1.3.3. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">1.4. 学習方針</a></li>
 </ul>
 </li>
 </ul>
@@ -134,17 +136,16 @@
 <div class="section" id="id2">
 <h2>1.3. 何が変わったのだろう？<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>公式サイトの`出題範囲のページ &lt;<a class="reference external" href="https://opcel.org/examarea">https://opcel.org/examarea</a>&gt;` にVer1.0との比較と言うPDFが公開されていますのでこちらを参考に見てみましょう。冒頭のページに新しいテストについての特徴が記載されているので、それらについて考えてみます。</p>
-</div>
 <div class="section" id="mitaka-queens">
-<h2>1.4. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応<a class="headerlink" href="#mitaka-queens" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>1.3.1. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応<a class="headerlink" href="#mitaka-queens" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>まずVer1.0ではOpenStackのバージョンとしてはKiloでした。これがVer2.0ではMitaka以降となっています。当時最新のQueensまでとなっていますのでQueensまでで主要コンポーネントとよく使われるようになったコンポーネントを抑えておく必要があるのでしょう。</p>
 </div>
 <div class="section" id="id3">
-<h2>1.5. 商用システムで活用度の高いコアコンポーネントの選択と集中<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>1.3.2. 商用システムで活用度の高いコアコンポーネントの選択と集中<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>2つ目の特徴は活用度の高いコアコンポーネントにより特化すると言う事だと思いますが、PDFの2ページ目の図「OPCEL 出題範囲主題の新旧比較」に現われていると思います。たとえばVer1.0ではSwiftの重要度は5でしたが、Ver2.0では2となっています。逆にNova,Neutronはそれぞれ重要度が6だったのがVer2.0では7となっており、重要度が増しています。商用システムではSwiftを用いず商用ストレージシステムを用いる事も多い事から重要度を下げ、ほとんどの環境で用いられるNova,Neutronの問題数を増やしたと言う事なのだと思います。</p>
 </div>
 <div class="section" id="id4">
-<h2>1.6. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>1.3.3. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>最後のこれは何を指しているのか、全然意図が違ったらゴメンナサイですがVer1.0の頃はコマンドの移行期という事もあり、例えば構築しているインスタンスのリストを取得しようとするとnovaコマンドでもopenstackコマンドでも同じ事が出来る状態でした。試験としてはどちらかに統一したい所でしょうけれども、移行期とはいえまだまだ旧来のそれぞれのコンポーネントのコマンドを用いるのが標準であったがために切り捨てるわけに行かなかったのだと思います。</p>
 <blockquote>
 <div>novaコマンドの場合)
@@ -153,8 +154,9 @@ openstackコマンドの場合)
 openstack server list</div></blockquote>
 <p>結果どうなるか、両方テストに出てくるかも？と普段使わないコマンドであっても覚えなければいけない事となっていました。この辺りは <cite>参考資料のページにあるADOCさんのセミナー資料 &lt;https://opcel.org/download&gt;</cite> でも触れられています。</p>
 </div>
+</div>
 <div class="section" id="id5">
-<h2>1.7. 学習方針<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>1.4. 学習方針<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>私もまだまだ各コンポーネント名のコマンドで構築してしまうので、まずはopenstackコマンドに慣れて行く所から始めたいと思います。市販の参考書などはまだ無く、今あるのは <cite>ナレッジデザイン社さんのテキスト &lt;https://opcel.org/textbook&gt;</cite> のみ。ちょっと個人で買うには高いので <cite>OpenStack公式のドキュメント &lt;https://docs.openstack.org/ja/&gt;</cite> で勉強していこうと思います。
 当然高性能なパソコンなどは無いので、学習にもOpenStackを使おう！と言う事でおなじみ <cite>ConoHa &lt;https://www.conoha.jp&gt;</cite> にインスタンスを立ててそこにネスト環境ではありますがOpenStack学習環境を構築して自習環境としたいと思います。</p>
 </div>
