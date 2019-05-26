@@ -6,6 +6,8 @@
 Welcome to cloud-study's documentation!
 =======================================
 
+cloud技術の学習に当たり、参考書や技術サイトを読むだけでなく実施した事などをアウトプットする事でより深く技術について知ろうと言う取り組みの一環として本サイトを立ち上げました。
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
