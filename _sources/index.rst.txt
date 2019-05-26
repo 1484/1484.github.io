@@ -12,7 +12,7 @@ cloud技術の学習に当たり、参考書や技術サイトを読むだけで
    :maxdepth: 2
    :caption: Contents:
 
-
+   openstack/*
 
 Indices and tables
 ==================
