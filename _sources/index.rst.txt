@@ -15,7 +15,7 @@ cloud技術の学習に当たり、参考書や技術サイトを読むだけで
     :numbered:
     :glob:
 
-   openstack/*
+    openstack/*
 
 Indices and tables
 ==================
