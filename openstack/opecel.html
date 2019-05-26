@@ -1,44 +1,126 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>1. OPCELの学習 &#8212; cloud-study  ドキュメント</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="prev" title="Welcome to cloud-study&#39;s documentation!" href="../index.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>ナビゲーション</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="総合索引"
-             accesskey="I">索引</a></li>
-        <li class="right" >
-          <a href="../index.html" title="Welcome to cloud-study&#39;s documentation!"
-             accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">cloud-study  ドキュメント</a> &#187;</li> 
-      </ul>
-    </div>  
+    <link rel="prev" title="Welcome to cloud-study&#39;s documentation!" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          cloud-study</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
             
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. OPCELの学習</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">1. OPCELの学習</a><ul>
+<li><a class="reference internal" href="#id1">1.1. OPCELとは</a></li>
+<li><a class="reference internal" href="#version2-0">1.2. Version2.0になりました</a></li>
+<li><a class="reference internal" href="#id2">1.3. 何が変わったのだろう？</a></li>
+<li><a class="reference internal" href="#mitaka-queens">1.4. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応</a></li>
+<li><a class="reference internal" href="#id3">1.5. 商用システムで活用度の高いコアコンポーネントの選択と集中</a></li>
+<li><a class="reference internal" href="#id4">1.6. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加</a></li>
+<li><a class="reference internal" href="#id5">1.7. 学習方針</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../index.html" title="Previous Chapter: Welcome to cloud-study's documentation!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Welcome to cl...</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/openstack/opecel.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
   <div class="section" id="opcel">
 <h1>1. OPCELの学習<a class="headerlink" href="#opcel" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id1">
@@ -79,66 +161,21 @@ openstack server list</div></blockquote>
 </div>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">1. OPCELの学習</a><ul>
-<li><a class="reference internal" href="#id1">1.1. OPCELとは</a></li>
-<li><a class="reference internal" href="#version2-0">1.2. Version2.0になりました</a></li>
-<li><a class="reference internal" href="#id2">1.3. 何が変わったのだろう？</a></li>
-<li><a class="reference internal" href="#mitaka-queens">1.4. 現在商用システムで最も利用されている Mitaka から、最新の Queens まで幅広く対応</a></li>
-<li><a class="reference internal" href="#id3">1.5. 商用システムで活用度の高いコアコンポーネントの選択と集中</a></li>
-<li><a class="reference internal" href="#id4">1.6. コマンドオプションの暗記問題を低減し、即戦力を問う知識問題を増加</a></li>
-<li><a class="reference internal" href="#id5">1.7. 学習方針</a></li>
-</ul>
-</li>
-</ul>
-
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="../index.html"
-                        title="前の章へ">Welcome to cloud-study's documentation!</a></p>
-  <div role="note" aria-label="source link">
-    <h3>このページ</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/openstack/opecel.rst.txt"
-            rel="nofollow">ソースコードを表示</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
     </div>
+      
+  </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>ナビゲーション</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="総合索引"
-             >索引</a></li>
-        <li class="right" >
-          <a href="../index.html" title="Welcome to cloud-study&#39;s documentation!"
-             >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">cloud-study  ドキュメント</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Takeru Ishibashi.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5 で生成しました。
-    </div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Takeru Ishibashi.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>
