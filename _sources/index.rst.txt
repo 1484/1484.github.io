@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Contents:
-
 Welcome to cloud-study's documentation!
 =======================================
+
+Contents:
 
 cloud技術の学習に当たり、参考書や技術サイトを読むだけでなく実施した事などをアウトプットする事でより深く技術について知ろうと言う取り組みの一環として本サイトを立ち上げました。
 
